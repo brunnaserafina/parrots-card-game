@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+
+body {
+    background-color: #EEF9BF;
+    margin: 0 auto;
+}
+
+.conteudo {
+    align-self: center;
+}
+
+
+.titulo {
+    font-family: Roboto;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 65px;
+    color: #75B79E;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.carta-escondida{
+    background-color: #A7E9AF;
+    width: 117px;
+    height: 146px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: solid 1px #99CEA8;
+    margin: 18px;
+}
+
+.carta-escondida img {
+    width: 100px;
+    height: 100px;
+}
+
+.cartas {
+    width: 60%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+@media (max-width:767px ) {
+    .titulo {
+        font-size: 36px;
+        width: 310px;
+        line-height: 42px;
+        margin: 40px auto;
+    }
+       
+}
