@@ -1,7 +1,5 @@
 let quantidade;
-let gifs = [
-    "bobrossparrot", "explodyparrot", "fiestaparrot", "metalparrot", "revertitparrot", "tripletsparrot", "unicornparrot"
-];
+let gifs = ["bobross", "explody", "fiesta", "metal", "revertit", "triplets", "unicorn"];
 let embaralhar = [];
 
 while (quantidade % 2 !== 0 || quantidade > 14 || quantidade < 4) {
@@ -9,33 +7,32 @@ while (quantidade % 2 !== 0 || quantidade > 14 || quantidade < 4) {
 }
 
 for (index = 0; index < (quantidade / 2); index ++) {
-    const papagaiosDancando = gifs[index];
-    embaralhar.push(papagaiosDancando);
-    embaralhar.push(papagaiosDancando);
+    embaralhar.push(gifs[index]);
+    embaralhar.push(gifs[index]);
 }
-
-embaralhar.sort(comparador);
 
 function comparador() {
     return Math.random() - 0.5;
 }
 
+embaralhar.sort(comparador);
+
 for (index = 0; index < quantidade; index ++){
     const listaembaralhada =
     `
-    <li class="carta" onclick="virarCarta()">
-        
-        <img src="./imgens/${embaralhar[index]}.gif">
+    <li class="card" onclick="virarCartas(this)">
+        <img class="front-face face" src="./imgens/${embaralhar[index]}parrot.gif">
+        <img class="back-face face" src="./imgens/front.png">
     </li>
     ` ;
     
     document.querySelector('ul').innerHTML += listaembaralhada; 
 }
 
-
-
-
-
+function virarCartas(elemento) {
+    document.querySelectorAll(".card");
+    elemento.classList.add("flip");
+}
 
 
 
