@@ -74,6 +74,14 @@ function comparar() {
         setTimeout(() => {
             alert(`Você ganhou em ${contadorJogadas} jogadas!`)
         }, 1000);
+
+        setTimeout(() => {
+            let reiniciar = prompt('Deseja jogar novamente? Digite "sim" ou "não".')
+            reiniciar = reiniciar.toLowerCase();
+            if (reiniciar === "sim"){
+                location.reload();
+            }
+        }, 2000);
     }
 }
 
