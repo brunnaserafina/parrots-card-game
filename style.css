@@ -70,7 +70,7 @@ body {
     transform: rotateY(180deg);
 }
 
-@media (max-width:767px ) {
+@media (max-width:767px) {
     .title {
         font-size: 36px;
         width: 310px;
@@ -82,6 +82,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 }
 
