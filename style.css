@@ -75,7 +75,7 @@ body {
         font-size: 36px;
         width: 310px;
         line-height: 42px;
-        margin: 40px auto;
+        margin: 40px auto 0px auto;
     }
     
     .cards {
@@ -83,6 +83,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 10px;
     }
 }
 
