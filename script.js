@@ -36,7 +36,7 @@ let contadorPares = 0;
 let bloquearCartas = false;
 
 function virarCartas(elemento) {
-    if(bloquearCartas){
+    if (bloquearCartas) {
         return false;
     }
 
@@ -53,23 +53,26 @@ function virarCartas(elemento) {
 
 function comparar() {
     bloquearCartas = true;
-    if (primeiraCarta.innerHTML !== segundaCarta.innerHTML) {
+    if (primeiraCarta == segundaCarta) {
+        segundaCarta = undefined;
+        bloquearCartas = false;
+    } else if (primeiraCarta.innerHTML !== segundaCarta.innerHTML) {
         setTimeout(() => {
             primeiraCarta.classList.remove("flip");
             segundaCarta.classList.remove("flip");
             primeiraCarta = undefined;
             segundaCarta = undefined;
             bloquearCartas = false;
+            contadorJogadas += 2;
         }, 1000);
     } else {
         primeiraCarta = undefined;
         segundaCarta = undefined;
         bloquearCartas = false;
         contadorPares++;
+        contadorJogadas += 2;
     }
-
-    contadorJogadas+=2;
-
+    
     if (contadorPares === (quantidade / 2)) {
         setTimeout(() => {
             alert(`Você ganhou em ${contadorJogadas} jogadas!`)
@@ -78,7 +81,7 @@ function comparar() {
         setTimeout(() => {
             let reiniciar = prompt('Deseja jogar novamente? Digite "sim" ou "não".')
             reiniciar = reiniciar.toLowerCase();
-            if (reiniciar === "sim"){
+            if (reiniciar === "sim") {
                 location.reload();
             }
         }, 2000);
