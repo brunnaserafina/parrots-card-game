@@ -2,7 +2,7 @@
 
 ###
 
-<p align="left">Parrot Card Game é um site de jogo da memória com a temática de papagaios dançantes. Você pode escolher com quantas cartas quer jogar e testar suas habilidades!</p>
+<p align="left">Parrots Card Game é um site de jogo da memória com a temática de papagaios dançantes. Você pode escolher com quantas cartas quer jogar e testar suas habilidades!</p>
 
 ###
 
