@@ -5,12 +5,15 @@
 <p align="left">Parrots Card Game é um site de jogo da memória com a temática de papagaios dançantes. Você pode escolher com quantas cartas quer jogar e testar suas habilidades!</p>
 
 ###
+<div align="center">
 
-[Parrots](https://user-images.githubusercontent.com/106851605/215179310-2e510ccb-2cca-40cc-9781-81f3b5938416.webm)
+<img height="550" src="https://user-images.githubusercontent.com/106851605/215228207-6d2f6e65-48c3-46b9-a564-8f91a0083af4.gif" />
+
+</div>
 
 ###
 
-<p align="center">Acesse a aplicação e se divirta! => https://brunnaserafina.github.io/parrotscardgame-front</p>
+<p align="center">Acesse a aplicação e se divirta! => https://brunnaserafina.github.io/parrots-card-game</p>
 
 
 ###
@@ -44,9 +47,14 @@
 
 ### ▶️ Rodando a aplicação
 
-- Crie ou selecione uma pasta com o nome de sua preferência;
-- Clone este repositório na pasta criada/selecionada;
-- Veja a página ao vivo no navegador com a extensão Live Server - caso utilize o VSCode.
+1. Crie ou selecione uma pasta com o nome de sua preferência;
+2. Clone este repositório na pasta criada/selecionada;
+
+```bash
+ $ git clone https://github.com/brunnaserafina/parrots-card-game.git
+```
+
+3. Execute o index.html
 
 ###
 <br />
